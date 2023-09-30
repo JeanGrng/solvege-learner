@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="piano.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <title>Exercice Piano</title>
+</head>
+
+<body onload="draw([]);">
+	<section>
+		<nav>
+			<form>
+				<!--
+				<div class="ex" display="none">
+				    <h1>Exercice reconnaisance : (non fonctionel)</h1>
+					<p>
+				       	<input type="radio" name="typeEx" value=1 id="typeNote" /> <label for="typeNote">de note</label><br />
+				       	<input type="radio" name="typeEx" value=0 id="typeAccord" /> <label for="typeAccord">d'accord</label><br />
+				    </p>
+				</div>
+				-->
+			    <div class="ex">
+			    	<h1>Affichage :</h1>
+					<p>
+				       	<input type="checkbox" name="formEx" id="formNote" /> <label for="formNote">manuscrit</label><br />
+				       	<input type="checkbox" name="formEx" id="formSolfege" /> <label for="formSolfege">solfège</label><br />
+			   		</p>
+			   	</div>
+			   	<div class="ex" id="BaliseFormSolvege">
+			    	<h1>Clef de :</h1> 
+		   			<p>
+				       	<input type="radio" name="clefEx" value=1 id="clefSol" /> <label for="typeNote">Sol</label><br />
+				       	<input type="radio" name="clefEx" value=0 id="clefFa" /> <label for="typeNote">Fa</label><br />
+				    </p>
+		   		</div>
+		   		<div class="ex" id="BaliseFormSolvege">
+			    	<h1>Niveau Solvège :</h1> 
+		   			<p>
+				       	<input type="radio" name="levelEx" value=1 id="level1" /> <label for="typeNote">1</label><br />
+				       	<input type="radio" name="levelEx" value=0 id="level2" /> <label for="typeNote">2</label><br />
+				       	<input type="radio" name="levelEx" value=-1 id="level3" /> <label for="typeNote">3</label><br />
+				       	<input type="radio" name="levelEx" value=2 id="level4" /> <label for="typeNote">4</label><br />
+				       	<input type="radio" name="levelEx" value=5 id="level5" /> <label for="typeNote">5 (non fonctionel)</label><br />
+				    </p>
+		   		</div>
+			</form>
+		</nav>
+		<article>
+			<div id="exerciceScore">
+				<p>Timer : <span id="timer">60</span></p>
+				<p>Score : <span id="score">0</span></p>
+			</div>
+			<div id="content">
+				<canvas id="solfege" width="700" height="240">
+					Votre navigateur est obsolète
+				</canvas>
+				<p id="note">Votre navigateur est obsolète</p>
+			</div>
+			<div id="divPoubelle"></div>
+		</article>
+	</section>
+	<footer>
+		<canvas id="piano" width="1297" height="138">
+			Votre navigateur est obsolète
+		</canvas>
+	</footer>
+
+	<script src="draw.js"></script>
+	<script src="note.js"></script>
+	<script src="midi.js"></script>
+	
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+body{
+	background-color: #1F2430FF;
+	font-family: 'Baloo 2', 'Arial';
+	color: #CECECEFF;
+}
+section{
+	display: flex;
+}
+nav{
+	width: 20%;
+}
+article{
+	width: 60%;
+	text-align: center;
+}
+#divPoubelle{
+	width: 20%;
+}
+h1{
+	font-size: 1.2em;
+	font-weight: normal;
+	color: #3FAFE6;
+	margin: 0px;
+}
+#piano{
+	width: 100%;
+	margin-top: 10%;
+	position : fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+#note{
+	font-size: 5em;
+	margin: 0px;
+	color: #59C0FFFF
+}
+p{
+	margin: 10px;
+}
+#solfege{
+	background-color: white;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.ex p{
+	margin: 0px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
